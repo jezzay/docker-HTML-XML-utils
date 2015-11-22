@@ -5,17 +5,17 @@ Automated Docker build of [HTML-XML-utils](http://www.w3.org/Tools/HTML-XML-util
 HTML-XML-utils provides a number of simple utilities for manipulating HTML and XML files.
 
 
-Automated build available on [Docker Hub](https://registry.hub.docker.com/u/jezzay/html-xml-utils/) can be pulled with ```docker pull jezzay/html-xml-utils```
+Automated build available on [Docker Hub](https://hub.docker.com/r/jezzay/html-xml-utils/) and can be pulled with ```docker pull jezzay/html-xml-utils```
 
 ##Usage
 
 
-Individual tools can be invoked by using ```docker run jezzay/html-xml-utils [tool name>] [arguments]```
+Individual tools can be invoked by using ```docker run jezzay/html-xml-utils [tool name] [arguments]```
 
 For example, ```cat index.html | docker run -i jezzay/html-xml-utils hxnormalize``` would run ```hxnormalize``` over the contents of Standard Input
 
 
-Note the [-i option](https://docs.docker.com/reference/commandline/cli/#run) when using docker run to keep STDIN open. 
+Note the [-i option](https://docs.docker.com/engine/reference/run/#foreground) when using docker run to keep STDIN open. 
 
 Using ```jezzay/html-xml-utils``` as a base Docker image allows access to all the installed tools in your container. 
 
